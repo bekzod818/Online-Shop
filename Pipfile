@@ -6,6 +6,8 @@ name = "pypi"
 [packages]
 django = "*"
 pillow = "*"
+celery = "==4.4.2"
+flower = "==0.9.3"
 
 [dev-packages]
 
