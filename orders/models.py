@@ -17,7 +17,7 @@ class Order(models.Model):
     paid = models.BooleanField(default=False)
     braintree_id = models.CharField(max_length=150, blank=True)
     coupon = models.ForeignKey(Coupon, related_name="orders", null=True, blank=True, on_delete=models.SET_NULL)
-    discount = models.IntegerField(default=0, validators=[MinValueValidator(0), MaxValueValidator(100)])
+    discout = models.IntegerField(default=0, validators=[MinValueValidator(0), MaxValueValidator(100)])
 
     class Meta:
         ordering = ('-created', )
