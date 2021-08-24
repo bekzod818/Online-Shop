@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-24 19:04+0500\n"
+"POT-Creation-Date: 2021-08-25 00:06+0500\n"
 "PO-Revision-Date: 2021-08-24 15:28+0437\n"
 "Last-Translator: Bekzod Raximov <bekzod030900@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,11 +23,11 @@ msgstr ""
 msgid "Quantity"
 msgstr "navbat"
 
-#: config/settings.py:112
+#: config/settings.py:113
 msgid "English"
 msgstr "Inglizcha"
 
-#: config/settings.py:113
+#: config/settings.py:114
 msgid "Russian"
 msgstr "Ruscha"
 
@@ -155,6 +155,52 @@ msgid ""
 "        <p>Your order has been successfully completed. Your order number is "
 "<strong>%(order_id)s</strong>.</p>\n"
 "    "
+msgstr ""
+
+#: templates/payment/canceled.html:3
+#, fuzzy
+#| msgid "canceled/"
+msgid "Payment canceled"
+msgstr "bekorqilish/"
+
+#: templates/payment/canceled.html:6
+msgid "Your payment has not been processed"
+msgstr ""
+
+#: templates/payment/canceled.html:7
+msgid "There was a problem processing your payment."
+msgstr ""
+
+#: templates/payment/done.html:4
+msgid "Payment successful"
+msgstr ""
+
+#: templates/payment/done.html:7
+msgid "Your payment was successful"
+msgstr ""
+
+#: templates/payment/done.html:8
+msgid "Your payment has been processed successfully."
+msgstr ""
+
+#: templates/payment/process.html:4 templates/payment/process.html:7
+msgid "Pay by credit card"
+msgstr ""
+
+#: templates/payment/process.html:10
+msgid "Card Number"
+msgstr ""
+
+#: templates/payment/process.html:13
+msgid "CVV"
+msgstr ""
+
+#: templates/payment/process.html:16
+msgid "Expiration Date"
+msgstr ""
+
+#: templates/payment/process.html:21
+msgid "Pay"
 msgstr ""
 
 #: templates/shop/base.html:9 templates/shop/base.html:14

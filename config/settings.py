@@ -34,6 +34,7 @@ INSTALLED_APPS = [
     # external_apps
     'rosetta',
     'parler',
+    'localflavor',
 ]
 
 MIDDLEWARE = [

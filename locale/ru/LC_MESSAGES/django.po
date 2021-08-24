@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-24 19:04+0500\n"
-"PO-Revision-Date: 2021-08-24 19:05+0437\n"
+"POT-Creation-Date: 2021-08-25 00:06+0500\n"
+"PO-Revision-Date: 2021-08-25 00:18+0437\n"
 "Last-Translator: Bekzod Raximov <bekzod030900@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -23,11 +23,11 @@ msgstr ""
 msgid "Quantity"
 msgstr "Количество"
 
-#: config/settings.py:112
+#: config/settings.py:113
 msgid "English"
 msgstr "Английский"
 
-#: config/settings.py:113
+#: config/settings.py:114
 msgid "Russian"
 msgstr "Русский"
 
@@ -161,6 +161,52 @@ msgid ""
 msgstr ""
 "\n"
 "<p>Ваш заказ был успешно выполнен. Номер вашего заказа <strong>%(order_id)s</strong>.</p>"
+
+#: templates/payment/canceled.html:3
+#, fuzzy
+#| msgid "canceled/"
+msgid "Payment canceled"
+msgstr "otmenen/"
+
+#: templates/payment/canceled.html:6
+msgid "Your payment has not been processed"
+msgstr "Ваш платеж не был обработан"
+
+#: templates/payment/canceled.html:7
+msgid "There was a problem processing your payment."
+msgstr "При обработке вашего платежа возникла проблема."
+
+#: templates/payment/done.html:4
+msgid "Payment successful"
+msgstr "Платеж прошел успешно"
+
+#: templates/payment/done.html:7
+msgid "Your payment was successful"
+msgstr "Ваш платеж прошел успешно"
+
+#: templates/payment/done.html:8
+msgid "Your payment has been processed successfully."
+msgstr "Ваш платеж был успешно обработан."
+
+#: templates/payment/process.html:4 templates/payment/process.html:7
+msgid "Pay by credit card"
+msgstr "Оплатить кредитной картой"
+
+#: templates/payment/process.html:10
+msgid "Card Number"
+msgstr "Номер карты"
+
+#: templates/payment/process.html:13
+msgid "CVV"
+msgstr "CVV код"
+
+#: templates/payment/process.html:16
+msgid "Expiration Date"
+msgstr "Срок хранения"
+
+#: templates/payment/process.html:21
+msgid "Pay"
+msgstr "Платить"
 
 #: templates/shop/base.html:9 templates/shop/base.html:14
 msgid "My Shop"
