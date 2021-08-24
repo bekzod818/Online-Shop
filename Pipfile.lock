@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "327b9a2683be120bbbe501572ac3a2e8c78ed88ced4cc24a8208c94d54d2d6d3"
+            "sha256": "a05aba0a24a86be36658248b5a24f048c4dd7bd3246786bf97bfea26aee47a6b"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -86,6 +86,21 @@
             "index": "pypi",
             "version": "==3.2.6"
         },
+        "django-parler": {
+            "hashes": [
+                "sha256:51c33e7c0d3ca139d1f40ca4253894121a25d9df18076b8fafa573ab0d440010"
+            ],
+            "index": "pypi",
+            "version": "==2.2"
+        },
+        "django-rosetta": {
+            "hashes": [
+                "sha256:9f58dcf4079e7fe8526453c3cfb7a62d6e61faf6d28b655be903581d69c613d2",
+                "sha256:f6fb89321d982e321ab38003d2395e5bb4b87df3925a948194bbef9dec804a10"
+            ],
+            "index": "pypi",
+            "version": "==0.9.7"
+        },
         "flower": {
             "hashes": [
                 "sha256:7f45acb297ab7cf3dd40140816143a2588f6938dbd70b8c46b59c7d8d1e93d55"
@@ -153,6 +168,13 @@
             ],
             "index": "pypi",
             "version": "==8.3.1"
+        },
+        "polib": {
+            "hashes": [
+                "sha256:d3ee85e0c6788f789353416b1612c6c92d75fe6ccfac0029711974d6abd0f86d",
+                "sha256:e02c355ae5e054912e3b0d16febc56510eff7e49d60bf22aecb463bd2f2a2dfa"
+            ],
+            "version": "==1.1.1"
         },
         "pytz": {
             "hashes": [

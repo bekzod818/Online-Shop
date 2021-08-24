@@ -1,0 +1,221 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-08-24 19:04+0500\n"
+"PO-Revision-Date: 2021-08-24 19:05+0437\n"
+"Last-Translator: Bekzod Raximov <bekzod030900@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+"X-Translated-Using: django-rosetta 0.9.7\n"
+
+#: cart/forms.py:7 templates/cart/detail.html:16
+msgid "Quantity"
+msgstr "Количество"
+
+#: config/settings.py:112
+msgid "English"
+msgstr "Английский"
+
+#: config/settings.py:113
+msgid "Russian"
+msgstr "Русский"
+
+#: config/urls.py:9
+msgid "admin/"
+msgstr "admin/"
+
+#: config/urls.py:10
+msgid "cart/"
+msgstr "korzina/"
+
+#: config/urls.py:11
+msgid "orders/"
+msgstr "zakazi/"
+
+#: config/urls.py:12
+msgid "payment/"
+msgstr "oplata/"
+
+#: config/urls.py:13
+msgid "cuopons/"
+msgstr "kuponi/"
+
+#: coupons/forms.py:5
+msgid "Coupon"
+msgstr "Купон"
+
+#: payment/urls.py:6
+msgid "process/"
+msgstr "protsess/"
+
+#: payment/urls.py:7
+msgid "done/"
+msgstr "sdelano/"
+
+#: payment/urls.py:8
+msgid "canceled/"
+msgstr "otmenen/"
+
+#: templates/cart/detail.html:6 templates/cart/detail.html:10
+msgid "Your shopping cart"
+msgstr "Ваша Корзина"
+
+#: templates/cart/detail.html:14
+msgid "Image"
+msgstr "Изображение"
+
+#: templates/cart/detail.html:15
+msgid "Product"
+msgstr "Продукт"
+
+#: templates/cart/detail.html:17 templates/cart/detail.html:46
+msgid "Remove"
+msgstr "Удалять"
+
+#: templates/cart/detail.html:18
+msgid "Unit price"
+msgstr "Цена за единицу"
+
+#: templates/cart/detail.html:19
+msgid "Price"
+msgstr "Цена"
+
+#: templates/cart/detail.html:40
+msgid "Update"
+msgstr "Обновлять"
+
+#: templates/cart/detail.html:57
+msgid "Subtotal"
+msgstr "Промежуточный итог"
+
+#: templates/cart/detail.html:62
+#, python-format
+msgid ""
+"\n"
+"                        <td>\"%(code)s\" coupon (%(discount)s%% off)</td>\n"
+"                    "
+msgstr ""
+"\n"
+"<td>\"%(code)s\" купон (%(discount)s%% скидка)</td>"
+
+#: templates/cart/detail.html:72 templates/orders/create.html:31
+msgid "Total"
+msgstr "Общий"
+
+#: templates/cart/detail.html:78
+msgid "Apply a coupon"
+msgstr "Применить купон"
+
+#: templates/cart/detail.html:81
+msgid "Apply"
+msgstr "Применять"
+
+#: templates/cart/detail.html:85
+msgid "Continue shopping"
+msgstr "Продолжить покупки"
+
+#: templates/cart/detail.html:86 templates/orders/create.html:5
+#: templates/orders/create.html:9
+msgid "Checkout"
+msgstr "Проверить"
+
+#: templates/orders/create.html:12
+msgid "Your order"
+msgstr "Продукты"
+
+#: templates/orders/create.html:22
+#, python-format
+msgid ""
+"\n"
+"                    \"%(code)s\" (%(discount)s%% off)\n"
+"                "
+msgstr ""
+"\n"
+"\"%(code)s\" (%(discount)s%% скидка)"
+
+#: templates/orders/create.html:36
+msgid "Place order"
+msgstr "Разместить заказ"
+
+#: templates/orders/created.html:5 templates/orders/created.html:9
+msgid "Thank you"
+msgstr "Спасибо"
+
+#: templates/orders/created.html:10
+#, python-format
+msgid ""
+"\n"
+"        <p>Your order has been successfully completed. Your order number is <strong>%(order_id)s</strong>.</p>\n"
+"    "
+msgstr ""
+"\n"
+"<p>Ваш заказ был успешно выполнен. Номер вашего заказа <strong>%(order_id)s</strong>.</p>"
+
+#: templates/shop/base.html:9 templates/shop/base.html:14
+msgid "My Shop"
+msgstr "Мой магазин"
+
+#: templates/shop/base.html:19
+msgid "Language"
+msgstr "Язык"
+
+#: templates/shop/base.html:36
+msgid "Your cart"
+msgstr "Ваша корзина"
+
+#: templates/shop/base.html:38
+#, python-format
+msgid ""
+"\n"
+"                        %(items)s item, $%(total)s\n"
+"                        "
+msgid_plural ""
+"\n"
+"                            %(items)s items, $%(total)s\n"
+"                        "
+msgstr[0] ""
+"\n"
+"%(items)s элемент, $%(total)s"
+msgstr[1] ""
+"\n"
+"%(items)s элементы, $%(total)s"
+msgstr[2] ""
+"\n"
+"%(items)s элемент, $%(total)s"
+msgstr[3] ""
+"\n"
+"%(items)s элементы, $%(total)s"
+
+#: templates/shop/base.html:45
+msgid "Your cart is empty"
+msgstr "Ваша корзина пуста"
+
+#: templates/shop/product_detail.html:26
+msgid "Add to cart"
+msgstr "Добавить в корзину"
+
+#: templates/shop/product_list.html:6 templates/shop/product_list.html:24
+msgid "Products"
+msgstr "Продукты"
+
+#: templates/shop/product_list.html:11
+msgid "Categories"
+msgstr "Категории"
+
+#: templates/shop/product_list.html:14
+msgid "All"
+msgstr "Все"
+
+#~ msgid "Uzbek"
+#~ msgstr "Узбекский"

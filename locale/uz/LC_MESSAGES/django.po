@@ -1,0 +1,205 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-08-24 19:04+0500\n"
+"PO-Revision-Date: 2021-08-24 15:28+0437\n"
+"Last-Translator: Bekzod Raximov <bekzod030900@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Translated-Using: django-rosetta 0.9.7\n"
+
+#: cart/forms.py:7 templates/cart/detail.html:16
+msgid "Quantity"
+msgstr "navbat"
+
+#: config/settings.py:112
+msgid "English"
+msgstr "Inglizcha"
+
+#: config/settings.py:113
+msgid "Russian"
+msgstr "Ruscha"
+
+#: config/urls.py:9
+msgid "admin/"
+msgstr "admin/"
+
+#: config/urls.py:10
+msgid "cart/"
+msgstr "kart/"
+
+#: config/urls.py:11
+msgid "orders/"
+msgstr "buyurtmalar/"
+
+#: config/urls.py:12
+msgid "payment/"
+msgstr "tolov/"
+
+#: config/urls.py:13
+msgid "cuopons/"
+msgstr "kuponlar/"
+
+#: coupons/forms.py:5
+msgid "Coupon"
+msgstr "Kupon"
+
+#: payment/urls.py:6
+msgid "process/"
+msgstr "jarayon/"
+
+#: payment/urls.py:7
+msgid "done/"
+msgstr "bajarish/"
+
+#: payment/urls.py:8
+msgid "canceled/"
+msgstr "bekorqilish/"
+
+#: templates/cart/detail.html:6 templates/cart/detail.html:10
+msgid "Your shopping cart"
+msgstr "Sizning savatingiz"
+
+#: templates/cart/detail.html:14
+msgid "Image"
+msgstr "Rasm"
+
+#: templates/cart/detail.html:15
+msgid "Product"
+msgstr "Mahsulot"
+
+#: templates/cart/detail.html:17 templates/cart/detail.html:46
+msgid "Remove"
+msgstr "Ochirish"
+
+#: templates/cart/detail.html:18
+msgid "Unit price"
+msgstr "Har birini narxi"
+
+#: templates/cart/detail.html:19
+msgid "Price"
+msgstr "Narx"
+
+#: templates/cart/detail.html:40
+msgid "Update"
+msgstr "Yangilash"
+
+#: templates/cart/detail.html:57
+msgid "Subtotal"
+msgstr ""
+
+#: templates/cart/detail.html:62
+#, python-format
+msgid ""
+"\n"
+"                        <td>\"%(code)s\" coupon (%(discount)s%% off)</td>\n"
+"                    "
+msgstr ""
+
+#: templates/cart/detail.html:72 templates/orders/create.html:31
+msgid "Total"
+msgstr "Umumiy"
+
+#: templates/cart/detail.html:78
+msgid "Apply a coupon"
+msgstr ""
+
+#: templates/cart/detail.html:81
+msgid "Apply"
+msgstr ""
+
+#: templates/cart/detail.html:85
+msgid "Continue shopping"
+msgstr ""
+
+#: templates/cart/detail.html:86 templates/orders/create.html:5
+#: templates/orders/create.html:9
+msgid "Checkout"
+msgstr ""
+
+#: templates/orders/create.html:12
+msgid "Your order"
+msgstr ""
+
+#: templates/orders/create.html:22
+#, python-format
+msgid ""
+"\n"
+"                    \"%(code)s\" (%(discount)s%% off)\n"
+"                "
+msgstr ""
+
+#: templates/orders/create.html:36
+msgid "Place order"
+msgstr ""
+
+#: templates/orders/created.html:5 templates/orders/created.html:9
+msgid "Thank you"
+msgstr ""
+
+#: templates/orders/created.html:10
+#, python-format
+msgid ""
+"\n"
+"        <p>Your order has been successfully completed. Your order number is "
+"<strong>%(order_id)s</strong>.</p>\n"
+"    "
+msgstr ""
+
+#: templates/shop/base.html:9 templates/shop/base.html:14
+msgid "My Shop"
+msgstr ""
+
+#: templates/shop/base.html:19
+msgid "Language"
+msgstr ""
+
+#: templates/shop/base.html:36
+msgid "Your cart"
+msgstr ""
+
+#: templates/shop/base.html:38
+#, python-format
+msgid ""
+"\n"
+"                        %(items)s item, $%(total)s\n"
+"                        "
+msgid_plural ""
+"\n"
+"                            %(items)s items, $%(total)s\n"
+"                        "
+msgstr[0] ""
+
+#: templates/shop/base.html:45
+msgid "Your cart is empty"
+msgstr ""
+
+#: templates/shop/product_detail.html:26
+msgid "Add to cart"
+msgstr ""
+
+#: templates/shop/product_list.html:6 templates/shop/product_list.html:24
+msgid "Products"
+msgstr ""
+
+#: templates/shop/product_list.html:11
+msgid "Categories"
+msgstr ""
+
+#: templates/shop/product_list.html:14
+msgid "All"
+msgstr ""
+
+#~ msgid "Uzbek"
+#~ msgstr "O'zbekcha"
