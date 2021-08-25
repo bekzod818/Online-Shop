@@ -12,6 +12,7 @@ braintree = "==3.59.0"
 django-rosetta = "*"
 django-parler = "*"
 django-localflavor = "*"
+redis = "*"
 
 [dev-packages]
 
