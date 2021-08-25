@@ -13,6 +13,7 @@ django-rosetta = "*"
 django-parler = "*"
 django-localflavor = "*"
 redis = "*"
+environs = {extras = ["django"], version = "*"}
 
 [dev-packages]
 

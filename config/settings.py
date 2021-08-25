@@ -1,4 +1,9 @@
 from pathlib import Path
+from environs import Env
+
+# Enviroment Variables
+env = Env()
+env.read_env()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -8,12 +13,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-uc$tpibdab2uy#)h9$#%4_0n1y_eff_y(xx72r+n^p=btz1+nk'
+SECRET_KEY = env.str("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = env.bool('DEBUG', default=False)
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', '127.0.0.1']
 
 
 # Application definition
@@ -165,9 +170,9 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 
 # Braintree settings
-BRAINTREE_MERCHANT_ID = 'pjsgsd47zz778gqf'
-BRAINTREE_PUBLIC_KEY = '8d5gdjf9sjc6z9jq'
-BRAINTREE_PRIVATE_KEY = '34edff8c6c41033b53d0bb46fee28076'
+BRAINTREE_MERCHANT_ID = env.str('BRAINTREE_MERCHANT_ID')
+BRAINTREE_PUBLIC_KEY = env.str('BRAINTREE_PUBLIC_KEY')
+BRAINTREE_PRIVATE_KEY = env.str('BRAINTREE_PRIVATE_KEY')
 
 import braintree
 
