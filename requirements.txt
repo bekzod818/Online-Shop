@@ -7,4 +7,5 @@ django-rosetta
 django-parler
 django-localflavor
 redis
-environs["django"]
+psycopg2-binary
+environs

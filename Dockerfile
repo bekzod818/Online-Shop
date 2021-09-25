@@ -1,10 +1,15 @@
-# Указывает Docker использовать официальный образ python 3 с dockerhub в качестве базового образа
-FROM python:3
-# Устанавливает переменную окружения, которая гарантирует, что вывод из python будет отправлен прямо в терминал без предварительной буферизации
+FROM python:3.7-alpine
+
 ENV PYTHONUNBUFFERED 1
-# Устанавливает рабочий каталог контейнера — "app"
+COPY ./requirements.txt /requirements.txt
+
+RUN apk add --update --no-cache postgresql-client jpeg-dev
+
+RUN apk add --update --no-cache --virtual .tmp-build-deps \
+    gcc libc-dev linux-headers postgresql-dev musl-dev zlib zlib-dev
+RUN pip install -r /requirements.txt
+RUN apk del .tmp-build-deps
+
+RUN mkdir /app
+COPY . /app
 WORKDIR /app
-# Копирует все файлы из нашего локального проекта в контейнер
-ADD . /app
-# Запускает команду pip install для всех библиотек, перечисленных в requirements.txt
-RUN pip install -r requirements.txt

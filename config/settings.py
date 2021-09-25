@@ -90,12 +90,12 @@ WSGI_APPLICATION = 'config.wsgi.application'
 # PostgreSQL connect
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'onlineshop',
-        'USER': 'postgres',
-        'PASSWORD': env.str('PASSWORD'),
-        'HOST': 'localhost',
-        'PORT': '5432',
+        'ENGINE': env.str('POSTGRES_ENGINE', 'django.db.backends.sqlite3'),
+        'NAME': env.str('POSTGRES_DB', f"{BASE_DIR / 'db.sqlite3'}"),
+        'USER': env.str('POSTGRES_USER', 'user'),
+        'PASSWORD': env.str('POSTGRES_PASSWORD', 'password'),
+        'HOST': env.str('POSTGRES_HOST', 'localhost'),
+        'PORT': env.int('POSTGRES_PORT', '5432'),
     }
 }
 
@@ -194,6 +194,22 @@ BRAINTREE_CONF = braintree.Configuration(
     BRAINTREE_PRIVATE_KEY
 )
 
-REDIS_HOST = 'localhost'
-REDIS_PORT = 6379
-REDIS_DB = 1
+# Redis settings
+REDIS_HOST = 'redis'
+REDIS_PORT = '6379'
+REDIS_DB = '1'
+
+
+# Celery settings
+CELERY_BROKER_URL = f'redis://{REDIS_HOST}:{REDIS_PORT}/{REDIS_DB}'
+CELERY_BROKER_TRANSPORT_OPTION = {'visibility_timeout': 3600}  # an hour
+CELERY_RESULT_BACKEND = CELERY_BROKER_URL
+CELERY_ACCEPT_CONTENT = ['application/json']
+CELERY_TASK_SERIALIZER = 'json'
+CELERY_RESULT_SERIALIZER = 'json'
+
+try:
+    with open(Path.joinpath(Path(__file__).resolve().parent, 'local_settings.py')) as f:
+        exec(f.read(), globals())
+except IOError:
+    pass

@@ -1,7 +1,61 @@
-version: '3.9'
+version: '3.7'
+
 services:
-   web:
-       build: .
-       command: python manage.py runserver localhost:8000
-       ports:
-           - 8000:8000
+  app:
+    build:
+      context: .
+    env_file:
+      - ./.env
+    ports:
+      - "8000:8000"
+    volumes:
+    - .:/app
+    command: >
+      sh -c "python3 manage.py migrate &&
+             python3 manage.py runserver 0.0.0.0:8000"
+    restart: always
+    depends_on:
+      - db
+  db:
+    image: postgres:13-alpine
+    env_file:
+      - ./.env
+    volumes: 
+      - pgdata:/var/lib/postgresql/data
+    ports:
+      - "5431:5432"
+    restart: always
+  redis:
+    image: redis:alpine
+    ports:
+      - "6379:6379"
+  celery:
+    build:
+      context: .
+    command: celery -A config worker -l info
+    volumes:
+      - .:/app
+    env_file:
+      - ./.env
+    restart: always
+    depends_on:
+      - db
+      - redis
+      - app
+  flower:
+    build:
+      context: .
+    # command: celery -A config flower
+    command: ["flower", "--broker=redis://redis:6379/1", "--port=8888"]
+    env_file:
+      - ./.env
+    ports:
+      - "8888:8888"
+    depends_on:
+      - db
+      - redis
+      - app
+      - celery
+
+volumes:
+  pgdata:
