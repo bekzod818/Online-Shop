@@ -14,6 +14,7 @@ django-parler = "*"
 django-localflavor = "*"
 redis = "*"
 environs = {extras = ["django"], version = "*"}
+psycopg2-binary = "*"
 
 [dev-packages]
 

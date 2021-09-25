@@ -1,2 +1,10 @@
 Django==3.2.6
 Pillow>=8.2.0
+celery==4.4.2
+flower==0.9.3
+braintree==3.59.0
+django-rosetta
+django-parler
+django-localflavor
+redis
+environs["django"]
